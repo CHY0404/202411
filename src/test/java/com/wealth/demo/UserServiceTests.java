@@ -1,80 +1,89 @@
 package com.wealth.demo;
 
+import com.wealth.demo.exception.UserAlreadyExistsException;
+import com.wealth.demo.model.dto.UserLoginDTO;
+import com.wealth.demo.model.dto.UserRegisterDTO;
 import com.wealth.demo.model.entity.User;
-import com.wealth.demo.service.UserService;
 import com.wealth.demo.repository.UserRepository;
-
-import org.hibernate.Hibernate;
+import com.wealth.demo.service.UserService;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.fail;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.*;
 
 @SpringBootTest
-@Transactional
+@ExtendWith(SpringExtension.class)
 public class UserServiceTests {
 
     @Autowired
     private UserService userService;
 
-    @Autowired
+    @MockBean
     private UserRepository userRepository;
 
-//    @Test
-//    public void testCreateUser() {
-//        User user = new User();
-//        user.setUsername("123");
-//        user.setPassword("666");
-//        user.setEmail("test@gmail.com");
-//        User savedUser = userService.createUser(user);
-//        assertNotNull(savedUser.getId());
-//        System.out.println("新增用戶成功，ID：" + savedUser.getId());
-//    }
+    @MockBean
+    private BCryptPasswordEncoder passwordEncoder;
+
     @Test
-    public void testFindUserById() {
-        // 假設我們已經有一個 ID 為 1 的用戶
-        User user = userRepository.findById(2L).orElse(null);
-        assertNotNull(user);
-        Hibernate.initialize(user.getWealthRecords());
-        System.out.println("查詢用戶成功: " + user);
+    public void testRegisterSuccess() {
+        // Mock 数据
+        UserRegisterDTO dto = new UserRegisterDTO();
+        dto.setUsername("testUser");
+        dto.setPassword("testPassword");
+        dto.setEmail("test@example.com");
+
+        // 模拟数据库行为
+        when(userRepository.existsByUsername("testUser")).thenReturn(false);
+        when(userRepository.existsByEmail("test@example.com")).thenReturn(false);
+        when(passwordEncoder.encode("testPassword")).thenReturn("encodedPassword");
+
+        // 执行注册逻辑
+        userService.register(dto);
+
+        // 验证交互
+        verify(userRepository, times(1)).save(any(User.class));
     }
 
+    @Test
+    public void testRegisterUsernameExists() {
+        // Mock 数据
+        UserRegisterDTO dto = new UserRegisterDTO();
+        dto.setUsername("existingUser");
+        dto.setPassword("testPassword");
+        dto.setEmail("test@example.com");
 
-//    @Test
-//    public void testFindUser() {
-//        Long userId = 1L; // 假設這是已存在的用戶 ID
-//        Optional<User> optionalUser = userService.getUserById(userId);
-//        if (optionalUser.isPresent()) {
-//            User user = optionalUser.get();
-//            assertNotNull(user);
-//            System.out.println("找到用戶：" + user);
-//        } else {
-//            System.out.println("用戶 ID：" + userId + " 不存在！");
-//            fail("未找到用戶");
-//        }
-//    }
-//
-//    @Test
-//    public void testUpdateUser() {
-//        Long userId = 1L; // 假設這是已存在的用戶 ID
-//        Optional<User> optionalUser = userService.getUserById(userId);
-//
-//        if (optionalUser.isPresent()) {
-//            User user = optionalUser.get();
-//            user.setPassword("new_password");
-//            User updatedUser = userService.updateUser(userId, user);
-//            assertEquals("new_password", updatedUser.getPassword());
-//            System.out.println("更新用戶成功：" + updatedUser);
-//        } else {
-//            System.out.println("用戶 ID：" + userId + " 不存在，無法更新！");
-//            fail("未找到用戶");
-//        }
-//    }
-//
+        // 模拟用户名已存在
+        when(userRepository.existsByUsername("existingUser1")).thenReturn(true);
+
+        // 执行注册逻辑
+        userService.register(dto);
+    }
+
+    @Test
+    public void testLoginSuccess() {
+        User user = new User();
+        user.setUsername("testUser");
+        user.setPassword("encodedPassword");
+
+        UserLoginDTO loginDTO = new UserLoginDTO();
+        loginDTO.setUsername("testUser");
+        loginDTO.setPassword("encodedPassword");
+
+        when(userRepository.findByUsername("testUser")).thenReturn(Optional.of(user));
+        when(passwordEncoder.matches("rawPassword", "encodedPassword")).thenReturn(true);
+
+        String token = userService.login(loginDTO);
+
+        assertNotNull(token);
+    }
 }

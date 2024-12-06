@@ -20,6 +20,7 @@ public class Wealth {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(nullable = false)
     private BigDecimal amount; // 金額
 

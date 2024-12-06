@@ -32,5 +32,14 @@ public class Category {
     @Column(nullable = false)
     private LocalDateTime createdAt; // 建立時間
 
+    @Column
+    private String icon; // 分類圖標
 
+    // 接受 name, type, icon 的參數化構造函數（方便初始化）
+    public Category(String name, WealthType type, String icon) {
+        this.name = name;
+        this.type = type;
+        this.icon = icon;
+        this.createdAt = LocalDateTime.now(); // 自動設置建立時間
+    }
 }

@@ -1,0 +1,203 @@
+2024-11-28 00:21:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 00:21:56 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 26836 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 00:21:56 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 00:21:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 00:21:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-11-28 00:21:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 00:21:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 00:21:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 00:21:58 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 00:21:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 00:21:58 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c839677
+2024-11-28 00:21:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 00:21:59 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 00:21:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:21:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:21:59 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 00:22:00 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.871 seconds (process running for 4.681)
+2024-11-28 00:22:01 [main] INFO  com.wealth.demo.service.UserService - 正在查詢用戶 ID: 1
+2024-11-28 00:22:01 [main] WARN  com.wealth.demo.service.UserService - 未找到用戶 ID: 1
+2024-11-28 00:22:01 [main] INFO  com.wealth.demo.service.UserService - 正在查詢用戶 ID: 1
+2024-11-28 00:22:01 [main] WARN  com.wealth.demo.service.UserService - 未找到用戶 ID: 1
+2024-11-28 00:22:01 [main] INFO  com.wealth.demo.service.UserService - 正在創建新用戶: test_user
+2024-11-28 00:22:01 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2024-11-28 00:22:01 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Column 'email' cannot be null
+2024-11-28 00:22:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:22:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 00:22:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 00:34:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 00:34:15 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 26568 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 00:34:15 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 00:34:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 00:34:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2024-11-28 00:34:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 00:34:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 00:34:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 00:34:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 00:34:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 00:34:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2905b568
+2024-11-28 00:34:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 00:34:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 00:34:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:34:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:34:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 00:34:18 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.48 seconds (process running for 4.35)
+2024-11-28 00:34:19 [main] INFO  com.wealth.demo.service.UserService - 正在查詢用戶 ID: 1
+2024-11-28 00:34:19 [main] WARN  com.wealth.demo.service.UserService - 未找到用戶 ID: 1
+2024-11-28 00:34:19 [main] INFO  com.wealth.demo.service.UserService - 正在查詢用戶 ID: 1
+2024-11-28 00:34:19 [main] WARN  com.wealth.demo.service.UserService - 未找到用戶 ID: 1
+2024-11-28 00:34:19 [main] INFO  com.wealth.demo.service.UserService - 正在創建新用戶: test
+2024-11-28 00:34:19 [main] INFO  com.wealth.demo.service.UserService - 新用戶創建成功: test
+2024-11-28 00:34:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:34:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 00:34:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 00:35:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 00:35:20 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 9116 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 00:35:20 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 00:35:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 00:35:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-11-28 00:35:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 00:35:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 00:35:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 00:35:22 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 00:35:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 00:35:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55053f81
+2024-11-28 00:35:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 00:35:22 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 00:35:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:35:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:35:23 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 00:35:23 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.428 seconds (process running for 4.259)
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 正在查詢用戶 ID: 1
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: test
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 正在更新用戶 ID: 1
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 用戶 ID: 1 更新成功！
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 正在查詢用戶 ID: 1
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: test
+2024-11-28 00:35:24 [main] INFO  com.wealth.demo.service.UserService - 正在創建新用戶: test
+2024-11-28 00:35:24 [main] WARN  com.wealth.demo.service.UserService - 用戶名 test 已存在，無法創建用戶！
+2024-11-28 00:35:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:35:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 00:35:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 00:40:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 00:40:29 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 6472 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 00:40:29 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 00:40:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 00:40:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-11-28 00:40:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 00:40:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 00:40:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 00:40:31 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 00:40:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 00:40:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c839677
+2024-11-28 00:40:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 00:40:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 00:40:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:40:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:40:32 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 00:40:33 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.535 seconds (process running for 4.302)
+2024-11-28 00:40:33 [main] INFO  com.wealth.demo.service.UserService - 正在創建新用戶: 123
+2024-11-28 00:40:33 [main] INFO  com.wealth.demo.service.UserService - 新用戶創建成功: 123
+2024-11-28 00:40:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:40:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 00:40:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 00:52:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 00:52:02 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 25916 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 00:52:02 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 00:52:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 00:52:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2024-11-28 00:52:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 00:52:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 00:52:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 00:52:04 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 00:52:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 00:52:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7adae08e
+2024-11-28 00:52:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 00:52:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 00:52:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:52:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:52:05 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 00:52:05 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.357 seconds (process running for 4.122)
+2024-11-28 00:52:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:52:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 00:52:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 00:53:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 00:53:04 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 11064 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 00:53:04 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 00:53:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 00:53:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-11-28 00:53:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 00:53:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 00:53:05 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 00:53:05 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 00:53:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 00:53:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d1c37d5
+2024-11-28 00:53:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 00:53:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 00:53:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:53:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 00:53:07 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 00:53:07 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.353 seconds (process running for 4.116)
+2024-11-28 00:53:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 00:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 00:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 12:28:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 12:28:30 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 25824 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 12:28:30 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 12:28:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 12:28:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2024-11-28 12:28:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 12:28:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 12:28:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 12:28:31 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 12:28:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 12:28:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e81617a
+2024-11-28 12:28:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 12:28:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 12:28:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 12:28:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 12:28:33 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 12:28:33 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.957 seconds (process running for 5.037)
+2024-11-28 12:28:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 12:28:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 12:28:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 12:34:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 12:34:38 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 25544 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 12:34:38 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 12:34:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 12:34:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2024-11-28 12:34:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 12:34:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 12:34:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 12:34:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 12:34:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 12:34:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17c53dfb
+2024-11-28 12:34:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 12:34:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 12:34:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 12:34:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 12:34:41 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 12:34:41 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.594 seconds (process running for 4.402)
+2024-11-28 12:34:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 12:34:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 12:34:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-28 12:39:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-28 12:39:20 [main] INFO  com.wealth.demo.UserServiceTests - Starting UserServiceTests using Java 21.0.5 with PID 20220 (started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-11-28 12:39:20 [main] INFO  com.wealth.demo.UserServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-11-28 12:39:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28 12:39:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-11-28 12:39:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-28 12:39:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-28 12:39:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-28 12:39:21 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28 12:39:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-28 12:39:21 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44eb2452
+2024-11-28 12:39:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-28 12:39:22 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-28 12:39:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 12:39:22 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28 12:39:22 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-28 12:39:23 [main] INFO  com.wealth.demo.UserServiceTests - Started UserServiceTests in 3.483 seconds (process running for 4.284)
+2024-11-28 12:39:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28 12:39:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-28 12:39:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

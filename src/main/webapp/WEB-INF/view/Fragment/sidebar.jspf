@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%-- 左側導航欄 --%>
+<nav id="sidebar" class="sidebar">
+    <div class="sidebar-content js-simplebar">
+        <a class="sidebar-brand" href="${pageContext.request.contextPath}/income-expense">
+            <span class="align-middle">Forward to Wealth</span>
+        </a>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="${pageContext.request.contextPath}/wealth">
+                    <i class="align-middle" data-feather="dollar-sign"></i> 收支管理
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="${pageContext.request.contextPath}/charts">
+                    <i class="align-middle" data-feather="pie-chart"></i> 圖表分析
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="${pageContext.request.contextPath}/profile">
+                    <i class="align-middle" data-feather="user"></i> 會員資料
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

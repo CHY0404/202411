@@ -1,4 +1,4 @@
-// Fonts
+// Fonts字型
 $font-family-sans-serif: "Inter", "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -8,7 +8,7 @@ $font-size-lg: .925rem !default;
 $font-size-sm: .75rem !default;
 $small-font-size: 80% !default;
 
-// Spacer
+// Spacer間距
 $spacer: 1rem !default;
 
 $spacers: (
@@ -22,7 +22,7 @@ $spacers: (
   7: ($spacer * 6)
 ) !default;
 
-// Grid breakpoints
+// Grid breakpoints網格斷點
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -32,10 +32,10 @@ $grid-breakpoints: (
   xxl: 1440px
 ) !default;
 
-// Grid gutter
+// Grid gutter網格間距
 $grid-gutter-width: 24px;
 
-// Grid containers
+// Grid containers網格容器
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -45,16 +45,16 @@ $container-max-widths: (
 
 $container-padding-x: .75rem !default;
 
-// Options
+// Options選項
 $min-contrast-ratio: 3 !default;
 $enable-validation-icons: false !default;
 $enable-rfs: false !default;
 $enable-negative-margins: true !default;
 
-// Transitions
+// Transitions轉場效果
 $transition-base: all .35s ease-in-out !default;
 
-// Theme colors
+// Theme colors 主題顏色
 $blue:    #3B7DDD !default;
 $indigo:  #0a0a0a !default;
 $purple:  #6f42c1 !default;
@@ -98,7 +98,7 @@ $theme-colors: (
   "dark": $dark
 ) !default;
 
-// Social colors
+// Social colors社交顏色
 $social-colors: (
   "facebook": #3b5998,
   "twitter": #1da1f2,
@@ -113,23 +113,23 @@ $social-colors: (
   "bitbucket": #0052cc
 ) !default;
 
-// Body
+// Body身體
 $body-bg: #f5f7fb !default;
 $body-color: $gray-700 !default;
 
-// Links
+// Links連結
 $link-decoration: none !default;
 $link-hover-decoration: underline !default;
 
-// Common
+// Common常見
 $border-width: 1px !default;
 
-// Fonts
+// Fonts字型
 $line-height-base: 1.5 !default;
 $line-height-lg: 1.5 !default;
 $line-height-sm: 1.5 !default;
 
-// Headings
+// Headings標題
 $h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 1.75 !default;
 $h3-font-size: $font-size-base * 1.5 !default;
@@ -139,7 +139,7 @@ $h6-font-size: $font-size-base !default;
 $headings-color: $black !default;
 $headings-font-weight: 400 !default;
 
-// Displays
+// Displays顯示
 $display-font-sizes: (
 	1: 6rem,
   2: 5.5rem,
@@ -149,27 +149,27 @@ $display-font-sizes: (
   6: 2.5rem
   ) !default;
 
-// Shadows
+// Shadows陰影
 $box-shadow-sm:    0 0.05rem 0.2rem rgba($black, .05) !default;
 $box-shadow:       0 0.1rem 0.2rem rgba($black, .05) !default;
 $box-shadow-lg:    0 0.2rem 0.2rem rgba($black, .05) !default;
 
-// Navbar input
+// Navbar input導覽行輸入框
 $navbar-input-bg: darken($body-bg, 0.5%) !default;
 
-// Border radius
+// Border radius圓角
 $border-radius-sm: .1rem !default;
 $border-radius:    .2rem !default;
 $border-radius-lg: .3rem !default;
 
-// Navbar
+// Navbar導覽欄
 $navbar-padding-y: $spacer*0.875 !default;
 $navbar-padding-x: $spacer*1.375 !default;
 $navbar-nav-link-padding-x: .5rem !default;
 $navbar-border-bottom: 0 !default;
 $navbar-box-shadow: 0 0 2rem 0 rgba($dark, .1) !default;
 
-// Navbar brand
+// Navbar brand導覽欄品牌
 $navbar-brand-padding-y: $spacer*0.875 !default;
 $navbar-brand-padding-x: 0 !default;
 $navbar-brand-color: $gray-100 !default;
@@ -179,10 +179,10 @@ $navbar-brand-icon-color: $primary !default;
 
 $navbar-bg: $white !default;
 
-// Footer
+// Footer頁腳
 $footer-bg: $white !default;
 
-// Forms
+// Forms表單
 $input-bg: $white !default;
 $input-disabled-bg: $gray-200 !default;
 $input-color: $gray-700 !default;
@@ -204,7 +204,7 @@ $input-height-sm: calc(#{$input-height-inner-sm} + #{$input-height-border}) !def
 $input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
 $input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
-// Cards
+// Cards卡片
 $card-border-radius: .25rem !default;
 $card-inner-border-radius: $card-border-radius !default;
 $card-border-width: 0 !default;
@@ -219,7 +219,7 @@ $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
 $card-cap-padding-x: $card-spacer-x !default;
 
-// Tables
+// Tables表格
 $table-cell-padding-y: .75rem !default;
 $table-cell-padding-x: .75rem !default;
 $table-cell-padding-y-sm: .3rem !default;
@@ -227,24 +227,24 @@ $table-cell-padding-x-sm: .3rem !default;
 $table-striped-bg: $gray-100 !default;
 $table-hover-bg: rgba($black, .0375) !default;
 
-// Sidebar general
+// Sidebar general側邊欄
 $sidebar-width: 260px !default;
 $sidebar-transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out !default;
 $sidebar-bg: #222E3C !default;
 
-// Sidebar brand
+// Sidebar brand側邊欄品牌
 $sidebar-brand-padding-y: 1.15rem !default;
 $sidebar-brand-padding-x: 1.5rem !default;
 $sidebar-brand-font-weight: $font-weight-bold !default;
 $sidebar-brand-font-size: 1.15rem !default;
 $sidebar-brand-color: $gray-100 !default;
 
-// Sidebar header
+// Sidebar header側邊欄標頭
 $sidebar-header-padding: 1.5rem 1.5rem 0.375rem !default;
 $sidebar-header-font-size: $font-size-sm !default;
 $sidebar-header-color: $gray-400 !default;
 
-// Sidebar link
+// Sidebar link側邊欄連結
 $sidebar-link-padding: .625rem 1.625rem !default;
 $sidebar-link-font-weight: 400 !default;
 $sidebar-link-bg: #222E3C !default;
@@ -261,24 +261,24 @@ $sidebar-link-active-bg: #{linear-gradient(90deg, rgba($primary,0.1) 0%, rgba($p
 $sidebar-link-active-color: $gray-200 !default;
 $sidebar-link-active-border-left-color: $primary !default;
 
-// Sidebar link icon
+// Sidebar link icon側邊欄連結圖標
 $sidebar-link-icon-color: #{rgba($gray-200, 0.5)} !default;
 $sidebar-link-icon-hover-color: #{rgba($gray-200, 0.75)} !default;
 $sidebar-link-icon-active-color: $gray-200 !default;
 
-// Sidebar bottom
+// Sidebar bottom側邊欄底部
 $sidebar-cta-color: $gray-200 !default;
 $sidebar-cta-bg: #2B3947 !default;
 $sidebar-cta-padding: $spacer*1.5 !default;
 $sidebar-cta-margin: $spacer*1.75 !default;
 $sidebar-cta-border-radius: $border-radius-lg !default;
 
-// Transitions
+// Transitions轉場效果
 $transition-appearance: background .4s ease-in-out, color .4s ease-in-out !default;
 $transition-appearance-slow: background .6s ease-in-out, color .6s ease-in-out !default;
 $transition-appearance-fast: background .1s ease-in-out, color .1s ease-in-out !default;
 
-// Modals
+// Modals模擬框
 $modal-content-border-width: 0 !default;
 $modal-header-border-width: 1px !default;
 $modal-footer-border-width: 1px !default;
@@ -288,30 +288,30 @@ $modal-md: 600px !default;
 $modal-sm: 400px !default;
 $modal-transition: transform .25s ease-out !default;
 
-// Badges
+// Badges徽章
 $badge-font-size: 80% !default;
 $badge-padding-y: .3em !default;
 $badge-padding-x: .45em !default;
 
-// Main
+// Main主要內容
 $main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
 
-// Content
+// Content內容
 $content-padding-desktop: 3rem 3rem 1.5rem !default;
 $content-padding-mobile: 1.5rem 1.5rem .75rem !default;
 
-// Datetimepicker
+// Datetimepicker日期時間選擇器
 $bs-datetimepicker-active-bg: $primary !default;
 
-// Simplebar
+// Simplebar滾動條
 $simplebar-scrollbar-bg: $white !default;
 
-// Hamburger
+// Hamburger漢堡選單
 $hamburger-width-top: 24px !default;
 $hamburger-width-middle: 24px !default;
 $hamburger-width-bottom: 16px !default;
 
-// Stats
+// Stats統計
 $stat-bg: lighten($primary, 35%) !default;
 $stat-icon-color: $primary !default;
 $stat-padding: $spacer * 0.75 !default;

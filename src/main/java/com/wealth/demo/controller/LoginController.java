@@ -6,6 +6,7 @@ import com.wealth.demo.model.dto.UserLoginDTO;
 import com.wealth.demo.service.UserService;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -15,13 +16,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class LoginController {
 
-    private final UserService userService;
+    @Autowired
+    private  UserService userService;
 
     @PostMapping("/login")
     public String login(@ModelAttribute("userLoginDTO") UserLoginDTO userLoginDTO, Model model) {
         try {
             userService.login(userLoginDTO);
-            return "redirect:/dashboard"; // 登入成功跳轉到後台
+
+            return "redirect:/income-expense"; // 登入成功跳轉到後台
         } catch (UsernameNotFoundException e) {
             model.addAttribute("errorSource", "login");
             model.addAttribute("error", "username");
@@ -33,5 +36,7 @@ public class LoginController {
             model.addAttribute("errorMessage", e.getMessage());
             return "index"; // 返回登入表單並顯示錯誤
         }
+
     }
+
 }

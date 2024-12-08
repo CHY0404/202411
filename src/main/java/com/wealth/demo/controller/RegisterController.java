@@ -6,6 +6,7 @@ import com.wealth.demo.model.dto.UserRegisterDTO;
 import com.wealth.demo.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,7 +17,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class RegisterController {
 
-    private final UserService userService;
+    @Autowired
+    private  UserService userService;
 
     @PostMapping("/register")
     public String register(@Valid @ModelAttribute("userRegisterDTO") UserRegisterDTO userRegisterDTO,

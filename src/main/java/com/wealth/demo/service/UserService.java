@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import jakarta.servlet.http.HttpSession;
 import java.util.Optional;
 
 @Service
@@ -84,6 +84,7 @@ public class UserService {
             logger.warn("密碼錯誤，用戶: {}", userLoginDTO.getUsername());
             throw new PasswordMismatchException("密碼錯誤！");
         }
+
 
         // 生成 JWT Token
         String token = jwtUtil.generateToken(user.getUsername());
@@ -155,4 +156,5 @@ public class UserService {
         userRepository.deleteById(id);
         logger.info("用戶 ID: {} 已刪除。", id);
     }
+
 }

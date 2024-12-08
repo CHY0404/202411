@@ -1,11 +1,12 @@
+
 /*!
  * AdminKit v3.0.2 (https://adminkit.io/)
- * Copyright 2021 Paul Laros
- * Copyright 2021 AdminKit
- * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
+ * 版權所有 2021 Paul Laros
+ * 版權所有 2021 AdminKit
+ * 依 MIT 授權條款許可 (https://github.com/adminkit/adminkit/blob/master/LICENSE)
  */
 
-// Variables
+// 變數
 @import "1-variables/app";
 
 // Bootstrap
@@ -34,10 +35,10 @@
 @import "~bootstrap/scss/helpers";
 @import "~bootstrap/scss/utilities/api";
 
-// Theme mixins
+// 主題混合宏
 @import "2-mixins/button";
 
-// Theme components
+// 主題組件
 @import "3-components/avatar";
 @import "3-components/buttons";
 @import "3-components/card";
@@ -58,14 +59,14 @@
 @import "3-components/type";
 @import "3-components/wrapper";
 
-// Theme utilities
+// 主題工具
 @import "4-utilities/cursors";
 
-// 3rd party plugins
+// 第三方插件
 @import "~jsvectormap/dist/css/jsvectormap";
 @import "~simplebar/dist/simplebar";
 @import "~flatpickr/dist/flatpickr";
 
-// 3rd party plugin styles
+// 第三方插件樣式
 @import "5-vendor/flatpickr";
 @import "5-vendor/simplebar";

@@ -6,14 +6,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>錯誤 - Forward to Wealth</title>
+    <title>錯誤</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
 </head>
-<body>
+<body class="error-page">
     <div class="error-container">
         <h1>發生錯誤</h1>
         <p>${errorMessage}</p>
-        <a href="${pageContext.request.contextPath}/" class="btn btn-primary">返回登入或註冊</a>
+        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='${pageContext.request.contextPath}/'">返回登入或註冊</button>
     </div>
 </body>
 </html>

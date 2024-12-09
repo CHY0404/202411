@@ -3,6 +3,8 @@ package com.wealth.demo.controller;
 import com.wealth.demo.exception.PasswordMismatchException;
 import com.wealth.demo.exception.UsernameNotFoundException;
 import com.wealth.demo.model.dto.UserLoginDTO;
+import com.wealth.demo.model.entity.User;
+import com.wealth.demo.repository.UserRepository;
 import com.wealth.demo.service.UserService;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
@@ -17,12 +19,24 @@ import org.springframework.web.bind.annotation.*;
 public class LoginController {
 
     @Autowired
-    private  UserService userService;
+    private UserService userService;
 
     @PostMapping("/login")
-    public String login(@ModelAttribute("userLoginDTO") UserLoginDTO userLoginDTO, Model model) {
+    public String login(@ModelAttribute("userLoginDTO") UserLoginDTO userLoginDTO, HttpSession session, Model model) {
         try {
-            userService.login(userLoginDTO);
+
+            // 獲取 JWT Token 並成功登入
+            String token = userService.login(userLoginDTO);
+
+            // 查詢用戶詳細信息
+            User user = userService.getUserByUsername(userLoginDTO.getUsername());
+
+            // 將用戶名存入會話
+            session.setAttribute("currentUser", user.getUsername());
+
+            // 如果需要，還可以存儲 JWT Token
+            session.setAttribute("authToken", token);
+
 
             return "redirect:/income-expense"; // 登入成功跳轉到後台
         } catch (UsernameNotFoundException e) {

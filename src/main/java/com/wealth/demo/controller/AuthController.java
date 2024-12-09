@@ -16,13 +16,13 @@ public class AuthController {
     @GetMapping("/income-expense")
     public String validateSession(HttpSession session, Model model) {
         // 檢查用戶是否已登入
-        User currentUser = (User) session.getAttribute("currentUser");
-        if (currentUser == null) {
+        String username = (String) session.getAttribute("currentUser");
+        if (username == null) {
             return "redirect:/"; // 未登入，跳轉到登入頁面
         }
+        // 將用戶名傳遞到 JSP
+        model.addAttribute("username", username);
 
-        // 如果需要，可以將用戶名添加到 Model，供 JSP 使用
-        model.addAttribute("username", currentUser.getUsername());
         return "income-expense"; // 返回收支管理頁面
     }
 

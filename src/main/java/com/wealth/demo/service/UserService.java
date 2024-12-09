@@ -91,6 +91,21 @@ public class UserService {
         logger.info("用戶 {} 登錄成功，JWT Token: {}", user.getUsername(), token);
         return token;
     }
+    /**
+     * 根據用戶名查詢用戶
+     *
+     * @param username 用戶名
+     * @return 用戶實體
+     */
+    public User getUserByUsername(String username) {
+        logger.info("查詢用戶名: {}", username);
+
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> {
+                    logger.warn("用戶名不存在: {}", username);
+                    return new UsernameNotFoundException("用戶名不存在！");
+                });
+    }
 
     /**
      * 根據 ID 查詢用戶

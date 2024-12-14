@@ -1,10 +1,10 @@
-/* 通用樣式 */
+/* =========== 通用樣式 =========== */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     color: #333;
+    background-color: #f9f9f9; /* 預設背景顏色 */
 }
 
 h1, h2, p {
@@ -13,81 +13,32 @@ h1, h2, p {
     text-align: center;
 }
 
-/* 表單容器樣式 */
-.form-container {
-    width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
-}
-
-.form-title h1 {
-    font-size: 24px;
-    color: #007bff; /* 主題顏色 */
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: -15px;
     margin-bottom: 10px;
 }
 
-.form-title p {
-    font-size: 14px;
-    color: #666; /* 次要文字顏色 */
-    margin-bottom: 20px;
-}
-
-/* 表單樣式 */
-form {
-    display: flex;
-    flex-direction: column; /* 垂直排列表單元素 */
-}
-
-form label {
-    font-size: 14px;
-    margin: 10px 0 5px; /* 增加上下間距 */
-}
-
-form input {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc; /* 預設邊框顏色 */
-    border-radius: 5px;
-    margin-bottom: 15px; /* 底部間距 */
-}
-
-form input:focus {
-    outline: none;
-    border-color: #007bff; /* 聚焦時改變邊框顏色 */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 聚焦時的陰影效果 */
-}
-
-/* 按鈕樣式 */
-button {
+/* 輸入欄位通用樣式 */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 400px;
     padding: 10px;
     font-size: 16px;
-    color: #fff;
-    background-color: #007bff; /* 按鈕背景顏色 */
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer; /* 滑鼠指標變為手型 */
-    transition: background-color 0.3s; /* 添加漸變效果 */
+    box-sizing: border-box;
 }
 
-button:hover {
-    background-color: #0056b3; /* 滑鼠懸停時的背景顏色 */
-}
-
-/* 表單切換連結樣式 */
-.form-toggle {
-    font-size: 14px;
-    color: #007bff; /* 主題顏色 */
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    text-decoration: underline; /* 添加底線 */
-}
-
-.form-toggle:hover {
-    color: #0056b3; /* 滑鼠懸停時的文字顏色 */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* 隱藏元素樣式 */
@@ -95,54 +46,130 @@ button:hover {
     display: none;
 }
 
-/* 預設背景（用於測試範例） */
+/* =========== 背景樣式 =========== */
 body {
-    background-image: url('../images/bg.jpg'); /* 設定背景圖片 */
+    background-image: url('../images/home.jpg');
     background-size: cover;
     background-position: center;
 }
 
-/* 登入主要樣式 */
+body.error-page {
+    background-image: url('../images/error/error2.png');
+    background-size: 50% auto;
+    background-position: 50% 100px;
+    background-repeat: no-repeat;
+    background-color: #f1e6da;
+}
+
+/* =========== 登入主要樣式 =========== */
 .loginmain {
-    width: 100%; /* 滿版寬度 */
-    min-height: 100vh; /* 滿版高度 */
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6); /* 背景遮罩效果 */
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明遮罩 */
 }
 
 .loginmain .form-container {
-    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 添加陰影 */
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明背景 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深色陰影 */
+    border-radius: 10px; /* 保持邊角圓滑 */
+    padding: 20px; /* 適當的內邊距 */
+
 }
 
-/* 通用輸入欄位樣式 */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea {
-    width: 100%; /* 寬度填滿父容器 */
-    max-width: 400px; /* 最大寬度 */
-    padding: 10px; /* 內邊距 */
-    font-size: 16px; /* 字體大小 */
-    border: 1px solid #ccc; /* 邊框顏色 */
-    border-radius: 5px; /* 邊角圓滑 */
-    box-sizing: border-box; /* 確保內邊距與寬度計算一致 */
+/* =========== 表單樣式 =========== */
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* 聚焦時的輸入欄位樣式 */
-input:focus,
-textarea:focus {
-    outline: none; /* 去掉默認的聚焦外框 */
-    border-color: #007bff; /* 聚焦邊框顏色 */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 聚焦時的光暈效果 */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.error {
-    color: red; /* 錯誤消息顯示為紅色 */
-    font-weight: bold; /* 加粗 */
-    font-size: 0.9em;
-    margin-top: -15px; /* 調整與輸入欄位的距離 */
+form label {
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 表單切換連結 */
+.form-toggle {
+    font-size: 14px;
+    color: #007bff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.form-toggle:hover {
+    color: #0056b3;
+}
+
+/* =========== 表單標題樣式 =========== */
+.form-title h1 {
+    font-size: 24px;
+    color: #007bff;
     margin-bottom: 10px;
 }
+
+.form-title p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* =========== 其他樣式 =========== */
+.form-container .error {
+    margin-top: -10px;
+}
+
+        /* LOGO 和標語樣式 */
+        .left-panel img {
+            max-width: 200px; /* 調整 LOGO 大小 */
+            margin-bottom: 20px;
+        }
+
+        .left-panel p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            text-align: left;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* 增加對比度 */
+        }

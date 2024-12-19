@@ -1,0 +1,1118 @@
+2024-12-13 00:35:36 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到的數據: WealthDTO(id=null, amount=123, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 00:35:43 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到的數據: WealthDTO(id=null, amount=123, type=支出, categoryId=4, categoryName=null, timestamp=null, note=null)
+2024-12-13 01:05:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 01:05:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 01:05:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 01:05:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 01:05:14 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 2216 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 01:05:14 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 01:05:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 01:05:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2024-12-13 01:05:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 01:05:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 01:05:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 01:05:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 01:05:16 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 01:05:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 01:05:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1811 ms
+2024-12-13 01:05:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 01:05:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 01:05:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 01:05:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 01:05:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 01:05:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44492c06
+2024-12-13 01:05:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 01:05:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 01:05:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 01:05:18 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 01:05:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 01:05:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 01:05:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 01:05:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 01:05:19 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.545 seconds (process running for 5.934)
+2024-12-13 01:05:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 01:05:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 01:05:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 01:05:32 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 01:05:32 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwMjMxMzIsImV4cCI6MTczNDEwOTUzMn0.t3nLPrXOK8nX80m1J56Fhh4MTeatpK8mz3Q1M1hPrG4
+2024-12-13 01:05:32 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 01:05:32 [http-nio-8080-exec-1] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 01:05:32 [http-nio-8080-exec-10] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 01:05:47 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到的數據: WealthDTO(id=null, amount=1000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 01:21:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 01:21:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 01:21:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 01:21:51 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 01:21:51 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 6508 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 01:21:51 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 01:21:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 01:21:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2024-12-13 01:21:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 01:21:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 01:21:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 01:21:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 01:21:53 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 01:21:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 01:21:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1643 ms
+2024-12-13 01:21:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 01:21:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 01:21:53 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 01:21:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 01:21:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 01:21:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ddf42dd
+2024-12-13 01:21:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 01:21:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 01:21:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 01:21:55 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 01:21:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 01:21:56 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 01:21:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 01:21:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 01:21:56 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.337 seconds (process running for 5.712)
+2024-12-13 01:22:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 01:22:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 01:22:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 01:22:07 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 01:22:07 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwMjQxMjcsImV4cCI6MTczNDExMDUyN30.FrgVcOaESuFdunaVuARUVHeUO5L7-s8nOTs9_7X3yQU
+2024-12-13 01:22:07 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 01:22:07 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 01:22:07 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 01:22:26 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 01:22:27 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwMjQxNDcsImV4cCI6MTczNDExMDU0N30.SjLpt4VJRk2NnJ4mh70b1iOfjY6U5aafBGTRfFHZwwQ
+2024-12-13 01:22:27 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 01:22:27 [http-nio-8080-exec-4] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 01:22:27 [http-nio-8080-exec-5] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 01:22:57 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到的數據: WealthDTO(id=null, amount=100000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=月入10萬)
+2024-12-13 01:43:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 01:43:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 01:43:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 09:43:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 09:43:28 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 15288 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 09:43:28 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 09:43:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 09:43:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 3 JPA repository interfaces.
+2024-12-13 09:43:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 09:43:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 09:43:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 09:43:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 09:43:31 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 09:43:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 09:43:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2624 ms
+2024-12-13 09:43:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 09:43:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 09:43:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 09:43:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 09:43:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 09:43:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194224ca
+2024-12-13 09:43:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 09:43:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 09:43:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 09:43:35 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 09:43:35 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 09:43:35 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 09:43:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 09:43:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 09:43:36 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 8.376 seconds (process running for 9.034)
+2024-12-13 09:43:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 09:43:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 09:43:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-13 09:44:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 09:44:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNTQyNDIsImV4cCI6MTczNDE0MDY0Mn0.d60ItvBuwy71iZCMgM8QBsHeHBiBIoS7M9Avt3Zs6O4
+2024-12-13 09:44:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 09:44:03 [http-nio-8080-exec-2] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 09:44:03 [http-nio-8080-exec-1] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 09:44:08 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到的數據: WealthDTO(id=null, amount=1000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 10:51:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 10:51:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 10:51:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 10:54:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 10:54:01 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 3724 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 10:54:01 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 10:54:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 10:54:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2024-12-13 10:54:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 10:54:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 10:54:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 10:54:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 10:54:03 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 10:54:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 10:54:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1714 ms
+2024-12-13 10:54:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 10:54:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 10:54:04 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 10:54:04 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 10:54:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 10:54:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ddf42dd
+2024-12-13 10:54:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 10:54:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 10:54:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 10:54:06 [main] INFO  c.wealth.demo.config.CategoryConfig - 預設分類初始化完成: [Category(id=1, name=薪資, type=收入, user=null, icon=💼), Category(id=2, name=投資, type=收入, user=null, icon=📈), Category(id=3, name=獎金, type=收入, user=null, icon=🏆), Category(id=4, name=餐飲, type=支出, user=null, icon=🍔), Category(id=5, name=交通, type=支出, user=null, icon=🚗), Category(id=6, name=娛樂, type=支出, user=null, icon=🎮), Category(id=7, name=房租, type=支出, user=null, icon=🏠), Category(id=8, name=水電, type=支出, user=null, icon=💡)]
+2024-12-13 10:54:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 10:54:06 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 10:54:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 10:54:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 10:54:07 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.743 seconds (process running for 6.107)
+2024-12-13 11:48:35 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 11:48:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 11:48:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 11:48:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 11:48:40 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 5400 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 11:48:40 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 11:48:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 11:48:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2024-12-13 11:48:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 11:48:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 11:48:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 11:48:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 11:48:42 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 11:48:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 11:48:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1718 ms
+2024-12-13 11:48:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 11:48:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 11:48:42 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 11:48:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 11:48:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 11:48:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@254e9709
+2024-12-13 11:48:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 11:48:44 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 11:48:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 11:48:45 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 11:48:45 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 11:48:45 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 11:48:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 11:48:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 11:48:45 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.408 seconds (process running for 5.782)
+2024-12-13 11:48:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 11:48:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 11:48:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 11:48:51 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 11:48:51 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjE3MzEsImV4cCI6MTczNDE0ODEzMX0.I5uU0AayGDkwTDfMgkOFPFIHlxmShbBrpfZNEf6AOu4
+2024-12-13 11:48:51 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 11:48:52 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 11:48:52 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 11:49:04 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=100000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 11:50:00 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 11:50:00 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 11:50:24 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=100000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 12:10:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:10:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 12:10:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 12:10:31 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 12:10:31 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 15052 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 12:10:31 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 12:10:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 12:10:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
+2024-12-13 12:10:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 12:10:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:10:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 12:10:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 12:10:33 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 12:10:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 12:10:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1735 ms
+2024-12-13 12:10:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 12:10:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 12:10:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 12:10:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 12:10:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 12:10:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c4714ef
+2024-12-13 12:10:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 12:10:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 12:10:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:10:35 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 12:10:35 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 12:10:35 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 12:10:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:10:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 12:10:36 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.383 seconds (process running for 5.77)
+2024-12-13 12:10:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 12:10:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 12:10:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 12:10:51 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 12:10:52 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjMwNTEsImV4cCI6MTczNDE0OTQ1MX0.NgQcG6RMzxuK0TTx9_KyvJbnmxmxaOqcxQEHytzEv2o
+2024-12-13 12:10:52 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 12:10:52 [http-nio-8080-exec-5] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 12:10:52 [http-nio-8080-exec-3] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 12:13:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:13:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 12:13:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 12:13:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 12:13:56 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 11176 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 12:13:56 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 12:13:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 12:13:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2024-12-13 12:13:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 12:13:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:13:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 12:13:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 12:13:58 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 12:13:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 12:13:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1655 ms
+2024-12-13 12:13:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 12:13:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 12:13:58 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 12:13:58 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 12:13:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 12:13:58 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c4714ef
+2024-12-13 12:13:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 12:13:59 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 12:13:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:14:00 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 12:14:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 12:14:00 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 12:14:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:14:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 12:14:01 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.289 seconds (process running for 5.675)
+2024-12-13 12:14:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 12:14:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 12:14:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-13 12:14:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 12:14:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjMyNTEsImV4cCI6MTczNDE0OTY1MX0.f0uGvKue6t9pjUEOXp3VQahH8QG_NdY9uxId_jefCbk
+2024-12-13 12:14:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 12:14:17 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 12:14:17 [http-nio-8080-exec-9] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 12:15:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:15:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 12:15:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 12:15:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 12:15:41 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 576 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 12:15:41 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 12:15:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 12:15:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2024-12-13 12:15:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 12:15:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:15:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 12:15:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 12:15:43 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 12:15:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 12:15:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1901 ms
+2024-12-13 12:15:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 12:15:43 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 12:15:43 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 12:15:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 12:15:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 12:15:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c4714ef
+2024-12-13 12:15:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 12:15:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 12:15:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:15:45 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 12:15:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 12:15:46 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 12:15:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:15:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 12:15:46 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.934 seconds (process running for 6.35)
+2024-12-13 12:15:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 12:15:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 12:15:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-13 12:16:01 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 12:16:01 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjMzNjEsImV4cCI6MTczNDE0OTc2MX0.5YGagdT6WLrA3mNQ8fYT7h2cUqIXG1RyzWgq1luXJP8
+2024-12-13 12:16:01 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 12:16:04 [http-nio-8080-exec-9] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 12:16:04 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 12:16:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:16:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 12:16:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 12:16:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 12:16:28 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 9888 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 12:16:28 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 12:16:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 12:16:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2024-12-13 12:16:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 12:16:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:16:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 12:16:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 12:16:30 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 12:16:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 12:16:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1757 ms
+2024-12-13 12:16:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 12:16:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 12:16:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 12:16:31 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 12:16:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 12:16:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d37aa0f
+2024-12-13 12:16:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 12:16:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 12:16:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:16:33 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 12:16:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 12:16:33 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 12:16:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:16:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 12:16:33 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.417 seconds (process running for 5.817)
+2024-12-13 12:16:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 12:16:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 12:16:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 12:16:43 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 12:16:43 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjM0MDMsImV4cCI6MTczNDE0OTgwM30.53IEdi6JNqvGlvVBZq0BZZxKco6Db_-_ThXM2p70Q9U
+2024-12-13 12:16:43 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 12:19:07 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:19:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 12:19:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 12:19:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 12:19:11 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 13420 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 12:19:11 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 12:19:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 12:19:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2024-12-13 12:19:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 12:19:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:19:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 12:19:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 12:19:12 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 12:19:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 12:19:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1658 ms
+2024-12-13 12:19:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 12:19:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 12:19:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 12:19:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 12:19:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 12:19:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18db3b3c
+2024-12-13 12:19:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 12:19:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 12:19:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 12:19:15 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 12:19:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 12:19:15 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 12:19:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 12:19:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 12:19:15 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.301 seconds (process running for 5.699)
+2024-12-13 12:19:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 12:19:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 12:19:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 12:19:26 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 12:19:26 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjM1NjYsImV4cCI6MTczNDE0OTk2Nn0.fhRKhqgFzpBvwX-h6z30wsA_CicQViSLRwuwehZ2_2I
+2024-12-13 12:19:26 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 12:19:27 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 12:19:27 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 12:24:54 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=10000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 12:46:31 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=10000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=測試收入)
+2024-12-13 12:47:35 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=1, amount=10000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=測試收入)
+2024-12-13 12:48:16 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=1, amount=10000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=測試收入)
+2024-12-13 12:50:02 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=10000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=測試收入)
+2024-12-13 12:50:04 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=10000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=測試收入)
+2024-12-13 13:57:34 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 13:57:34 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNjk0NTQsImV4cCI6MTczNDE1NTg1NH0.k1gdu4EEaRzxSf8_73E1TVjLzRUvOS1kCwwekp77hyo
+2024-12-13 13:57:34 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 13:57:34 [http-nio-8080-exec-2] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 13:57:34 [http-nio-8080-exec-4] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 13:57:39 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1000, type=收入, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 14:49:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 14:49:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 14:49:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 14:49:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 14:49:08 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 856 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 14:49:08 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 14:49:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 14:49:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2024-12-13 14:49:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 14:49:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 14:49:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 14:49:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 14:49:10 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 14:49:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 14:49:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1562 ms
+2024-12-13 14:49:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 14:49:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 14:49:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 14:49:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 14:49:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 14:49:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1224e1b6
+2024-12-13 14:49:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 14:49:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 14:49:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 14:49:12 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 14:49:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 14:49:12 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 14:49:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 14:49:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 14:49:13 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.18 seconds (process running for 5.504)
+2024-12-13 14:52:48 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 14:52:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 14:52:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 14:52:51 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 14:52:51 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 18748 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 14:52:51 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 14:52:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 14:52:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2024-12-13 14:52:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 14:52:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 14:52:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 14:52:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 14:52:53 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 14:52:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 14:52:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1577 ms
+2024-12-13 14:52:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 14:52:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 14:52:53 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 14:52:53 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 14:52:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 14:52:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ffa7041
+2024-12-13 14:52:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 14:52:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 14:52:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 14:52:55 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 14:52:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 14:52:55 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 14:52:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 14:52:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 14:52:55 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.853 seconds (process running for 5.18)
+2024-12-13 14:52:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 14:52:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 14:52:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 14:53:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 14:53:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzI3ODIsImV4cCI6MTczNDE1OTE4Mn0.4BaYZmbOt-XQqkTPWSG3-FBZzCAw08GCkHolrmcIPVo
+2024-12-13 14:53:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 14:53:02 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 14:53:02 [http-nio-8080-exec-3] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 14:53:15 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=123456, type=INCOME, categoryId=2, categoryName=null, timestamp=null, note=null)
+2024-12-13 15:01:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:01:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:01:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:01:42 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:01:42 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 21332 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:01:42 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:01:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:01:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:01:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:01:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:01:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:01:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:01:44 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:01:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:01:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1822 ms
+2024-12-13 15:01:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:01:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:01:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:01:45 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:01:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:01:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a075e70
+2024-12-13 15:01:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:01:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:01:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:01:47 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:01:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:01:47 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:01:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:01:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:01:47 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.595 seconds (process running for 6.456)
+2024-12-13 15:01:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:01:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:01:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-13 15:01:59 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:02:00 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzMzMjAsImV4cCI6MTczNDE1OTcyMH0.01MvdRptl3LsJP-wpn7cjKbWJRBE5uFSypblArJOrlI
+2024-12-13 15:02:00 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:02:05 [http-nio-8080-exec-3] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:02:05 [http-nio-8080-exec-6] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:02:36 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, categoryName=null, timestamp=null, note=null)
+2024-12-13 15:11:14 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:11:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:11:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:11:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:11:16 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 23696 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:11:16 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:11:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:11:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:11:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:11:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1605 ms
+2024-12-13 15:11:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:11:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:11:18 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:11:18 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:11:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:11:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6475e778
+2024-12-13 15:11:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:11:19 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:11:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:11:20 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:11:20 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:11:20 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:11:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:11:21 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.124 seconds (process running for 5.559)
+2024-12-13 15:11:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:11:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:11:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:11:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:11:24 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 9400 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:11:24 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:11:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:11:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:11:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:11:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:11:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:11:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:11:26 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:11:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:11:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1483 ms
+2024-12-13 15:11:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:11:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:11:26 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:11:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:11:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:11:26 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7440265c
+2024-12-13 15:11:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:11:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:11:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:11:28 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:11:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:11:28 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:11:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:11:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:11:28 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.709 seconds (process running for 5.043)
+2024-12-13 15:11:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:11:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:11:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:11:45 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:11:46 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzM5MDUsImV4cCI6MTczNDE2MDMwNX0.ytEErISiGACbyBHEVBdlhRTlHSNjd_sp4oBvybNR6lo
+2024-12-13 15:11:46 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:11:53 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:11:53 [http-nio-8080-exec-4] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:14:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:14:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:14:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:14:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:14:46 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 7324 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:14:46 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:14:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:14:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:14:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:14:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:14:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:14:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:14:48 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:14:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:14:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1437 ms
+2024-12-13 15:14:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:14:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:14:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:14:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:14:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:14:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44492c06
+2024-12-13 15:14:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:14:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:14:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:14:50 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:14:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:14:50 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:14:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:14:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:14:51 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.624 seconds (process running for 4.947)
+2024-12-13 15:15:02 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:15:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:15:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:15:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:15:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzQxMDksImV4cCI6MTczNDE2MDUwOX0.Z-eLuKVMzAVNmPNmUtOV6QNG-ewNY4MZXek9suKwQE8
+2024-12-13 15:15:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:15:10 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:15:10 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:15:14 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T07:15:14.882, note=null)
+2024-12-13 15:17:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:17:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:17:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:17:32 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:17:32 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 12240 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:17:32 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:17:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:17:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:17:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:17:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:17:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:17:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:17:34 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:17:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:17:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1438 ms
+2024-12-13 15:17:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:17:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:17:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:17:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:17:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:17:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f99d8c
+2024-12-13 15:17:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:17:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:17:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:17:36 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:17:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:17:36 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:17:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:17:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:17:36 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.692 seconds (process running for 5.015)
+2024-12-13 15:17:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:17:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:17:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-13 15:17:46 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:17:47 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzQyNjcsImV4cCI6MTczNDE2MDY2N30.e93uCUkiE7fQkQL87fLlTCiQoa9JVvx59OY9_NKs3Ho
+2024-12-13 15:17:47 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:18:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:18:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:18:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:18:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:18:05 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 12248 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:18:05 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:18:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:18:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:18:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:18:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:18:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:18:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:18:07 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:18:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:18:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1483 ms
+2024-12-13 15:18:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:18:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:18:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:18:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:18:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:18:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6076c66
+2024-12-13 15:18:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:18:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:18:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:18:09 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:18:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:18:09 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:18:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:18:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:18:09 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.649 seconds (process running for 5.015)
+2024-12-13 15:18:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:18:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:18:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:18:24 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:18:24 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzQzMDQsImV4cCI6MTczNDE2MDcwNH0.dHH-SJJdfropYQur7QATNbn7v2FEkpes_QJ0vKpeijA
+2024-12-13 15:18:25 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:18:25 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:18:25 [http-nio-8080-exec-2] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:18:30 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T07:18:30.347, note=null)
+2024-12-13 15:21:11 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: null
+2024-12-13 15:21:11 [http-nio-8080-exec-4] WARN  com.wealth.demo.service.UserService - 用戶名不存在: null
+2024-12-13 15:21:29 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: null
+2024-12-13 15:21:29 [http-nio-8080-exec-1] WARN  com.wealth.demo.service.UserService - 用戶名不存在: null
+2024-12-13 15:21:48 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: null
+2024-12-13 15:21:48 [http-nio-8080-exec-7] WARN  com.wealth.demo.service.UserService - 用戶名不存在: null
+2024-12-13 15:22:22 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:22:22 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzQ1NDIsImV4cCI6MTczNDE2MDk0Mn0.KHz1nXjkp-FhbYqULr-cGIi-cL1xgXW-rWSkjudDQlc
+2024-12-13 15:22:22 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:22:23 [http-nio-8080-exec-6] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:22:23 [http-nio-8080-exec-1] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:22:32 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=10000, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T07:18:30.347, note=測試收入)
+2024-12-13 15:23:07 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=1, amount=10000, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T07:18:30.347, note=測試收入)
+2024-12-13 15:23:33 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: null
+2024-12-13 15:23:33 [http-nio-8080-exec-4] WARN  com.wealth.demo.service.UserService - 用戶名不存在: null
+2024-12-13 15:23:43 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=1, amount=10000, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T07:18:30.347, note=測試收入)
+2024-12-13 15:24:55 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:24:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:24:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:25:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:25:12 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 10300 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:25:12 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:25:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:25:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:25:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:25:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:25:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:25:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:25:14 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:25:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:25:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1471 ms
+2024-12-13 15:25:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:25:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:25:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:25:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:25:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:25:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1224e1b6
+2024-12-13 15:25:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:25:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:25:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:25:16 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:25:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:25:16 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:25:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:25:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:25:17 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.742 seconds (process running for 5.083)
+2024-12-13 15:25:21 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:25:21 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:25:21 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-13 15:25:26 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:25:26 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzQ3MjYsImV4cCI6MTczNDE2MTEyNn0.jZlcctNc5r9MtLeWDAFFzPNLqrYvjeTB667S1iTKY3o
+2024-12-13 15:25:26 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:25:27 [http-nio-8080-exec-6] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:25:27 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:25:31 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T07:25:31.259, note=null)
+2024-12-13 15:32:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:32:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:32:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:32:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:32:21 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 22012 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:32:21 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:32:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:32:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:32:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:32:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:32:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:32:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:32:23 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:32:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:32:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1387 ms
+2024-12-13 15:32:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:32:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:32:23 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:32:23 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:32:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:32:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ddf42dd
+2024-12-13 15:32:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:32:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:32:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:32:25 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:32:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:32:25 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:32:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:32:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:32:25 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.594 seconds (process running for 4.926)
+2024-12-13 15:32:31 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:32:31 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:32:31 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:32:38 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:32:38 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzUxNTgsImV4cCI6MTczNDE2MTU1OH0.Ujz7N_ispDmtxCHnmiRGCe7-mZITa9AaWXDPo9I01PE
+2024-12-13 15:32:38 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:32:39 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:32:39 [http-nio-8080-exec-2] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:32:43 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T07:32:43.662, note=null)
+2024-12-13 15:34:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:34:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:34:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:34:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:34:28 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 7928 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:34:28 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:34:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:34:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:34:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:34:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:34:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:34:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:34:30 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:34:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:34:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1459 ms
+2024-12-13 15:34:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:34:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:34:30 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:34:30 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:34:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:34:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a89414e
+2024-12-13 15:34:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:34:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:34:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:34:32 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:34:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:34:32 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:34:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:34:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:34:33 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.786 seconds (process running for 5.144)
+2024-12-13 15:34:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:34:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:34:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:34:42 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:34:43 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzUyODMsImV4cCI6MTczNDE2MTY4M30.waL_d_FKYtmebbRYsA5L12rjUuLN95aDJ7UhlZdooF4
+2024-12-13 15:34:43 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:34:43 [http-nio-8080-exec-3] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:34:43 [http-nio-8080-exec-5] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:34:53 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T07:34:53.542, note=null)
+2024-12-13 15:40:56 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:40:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:40:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:40:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:40:58 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 22288 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:40:58 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:40:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:40:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:41:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:41:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:41:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:41:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:41:00 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:41:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:41:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1631 ms
+2024-12-13 15:41:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:41:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:41:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:41:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:41:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:41:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75bf9e67
+2024-12-13 15:41:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:41:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:41:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:41:02 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:41:02 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:41:02 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:41:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:41:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:41:03 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.21 seconds (process running for 5.648)
+2024-12-13 15:41:07 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:41:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:41:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:41:07 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: null
+2024-12-13 15:41:08 [http-nio-8080-exec-1] WARN  com.wealth.demo.service.UserService - 用戶名不存在: null
+2024-12-13 15:41:16 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=10000, type=INCOME, categoryId=1, timestamp=2024-12-13T07:18:30.347, note=測試收入)
+2024-12-13 15:43:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:43:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:43:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:43:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:43:25 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 21964 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:43:25 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:43:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:43:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:43:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:43:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:43:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:43:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:43:27 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:43:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:43:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1658 ms
+2024-12-13 15:43:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:43:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:43:27 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:43:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:43:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:43:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ecb9e17
+2024-12-13 15:43:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:43:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:43:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:43:29 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:43:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:43:29 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:43:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:43:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:43:30 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.217 seconds (process running for 5.62)
+2024-12-13 15:43:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:43:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:43:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:44:00 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:44:01 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzU4NDEsImV4cCI6MTczNDE2MjI0MX0.G0VcdO1N0DshOdruwExnNJqa13h-TrDUxGMuAgmGC-A
+2024-12-13 15:44:01 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:44:01 [http-nio-8080-exec-9] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:44:01 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:44:06 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T07:44:06.023, note=null)
+2024-12-13 15:45:36 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m174ms184µs900ns).
+2024-12-13 15:45:45 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:45:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:45:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:45:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:45:48 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 2700 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:45:48 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:45:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:45:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:45:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:45:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:45:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:45:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:45:49 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:45:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:45:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1700 ms
+2024-12-13 15:45:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:45:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:45:50 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:45:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:45:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:45:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77f03916
+2024-12-13 15:45:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:45:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:45:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:45:52 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:45:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:45:52 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:45:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:45:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:45:52 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.368 seconds (process running for 5.797)
+2024-12-13 15:45:56 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:45:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:45:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-13 15:46:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:46:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzU5NjIsImV4cCI6MTczNDE2MjM2Mn0.Rvkf-w8ShhwNkAMegqq7eCrl2epGIsxE1QigB9yYtWQ
+2024-12-13 15:46:02 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:46:02 [http-nio-8080-exec-3] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:46:02 [http-nio-8080-exec-7] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:46:06 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=112, type=INCOME, categoryId=1, timestamp=2024-12-13T07:46:06.699, note=null)
+2024-12-13 15:47:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s122ms256µs700ns).
+2024-12-13 15:47:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:47:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:47:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:48:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:48:37 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 9336 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:48:37 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:48:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:48:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:48:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:48:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:48:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:48:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:48:38 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:48:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:48:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1445 ms
+2024-12-13 15:48:38 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:48:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:48:38 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:48:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:48:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:48:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c18ee69
+2024-12-13 15:48:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:48:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:48:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:48:40 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:48:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:48:41 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:48:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:48:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:48:41 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.733 seconds (process running for 5.061)
+2024-12-13 15:50:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:50:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:50:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-12-13 15:50:48 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:50:49 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzYyNDksImV4cCI6MTczNDE2MjY0OX0._Cr2cxKrtLjOxaLOj9O3xKizcN8LLLfrqA8ZtjBtqcY
+2024-12-13 15:50:49 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:50:49 [http-nio-8080-exec-6] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:50:49 [http-nio-8080-exec-2] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:50:55 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T07:50:55.110, note=null)
+2024-12-13 15:50:55 [http-nio-8080-exec-8] ERROR c.w.demo.controller.WealthController - 未找到驗證用戶！
+2024-12-13 15:51:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:51:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 15:51:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 15:51:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 15:51:13 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 22684 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 15:51:13 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 15:51:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 15:51:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2024-12-13 15:51:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 15:51:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:51:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 15:51:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 15:51:15 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 15:51:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 15:51:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1680 ms
+2024-12-13 15:51:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 15:51:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 15:51:15 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 15:51:15 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 15:51:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 15:51:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ee2423
+2024-12-13 15:51:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 15:51:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 15:51:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 15:51:17 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 15:51:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 15:51:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 15:51:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 15:51:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 15:51:18 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.448 seconds (process running for 5.878)
+2024-12-13 15:51:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 15:51:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 15:51:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 15:51:28 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 15:51:28 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzYyODgsImV4cCI6MTczNDE2MjY4OH0.XHty-pn9J-DUz4VhgKld3ozwmym0AmDxZ-oIScGdMFc
+2024-12-13 15:51:28 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 15:51:29 [http-nio-8080-exec-5] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 15:51:29 [http-nio-8080-exec-6] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 15:51:33 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T07:51:33.441, note=null)
+2024-12-13 15:53:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s266ms524µs800ns).
+2024-12-13 15:53:57 [http-nio-8080-exec-7] ERROR c.w.demo.controller.WealthController - 未找到驗證用戶！
+2024-12-13 16:07:18 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 16:07:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 16:07:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 16:07:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 16:07:22 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 1704 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 16:07:22 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 16:07:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 16:07:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2024-12-13 16:07:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 16:07:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 16:07:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 16:07:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 16:07:23 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 16:07:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 16:07:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1525 ms
+2024-12-13 16:07:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 16:07:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 16:07:24 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 16:07:24 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 16:07:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 16:07:24 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ddf42dd
+2024-12-13 16:07:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 16:07:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 16:07:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 16:07:25 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 16:07:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 16:07:26 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 16:07:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 16:07:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 16:07:26 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.748 seconds (process running for 5.209)
+2024-12-13 16:07:30 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 16:07:30 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 16:07:30 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-13 16:07:47 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 16:07:47 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzcyNjcsImV4cCI6MTczNDE2MzY2N30.Bg2qPV2QPfqi3ejFchPxH43sb7W8zzXbmt9HHEpBfpw
+2024-12-13 16:07:47 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 16:07:48 [http-nio-8080-exec-6] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 16:07:48 [http-nio-8080-exec-10] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T08:07:52.161, note=null)
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T08:07:52.161, note=null)
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: WealthDTO(id=1, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T08:07:52.161, note=null)
+2024-12-13 16:07:52 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄: WealthDTO(id=1, amount=1234, type=INCOME, categoryId=1, timestamp=2024-12-13T08:07:52.161, note=null)
+2024-12-13 16:07:53 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-13 16:07:53 [http-nio-8080-exec-9] ERROR c.w.demo.controller.WealthController - 未找到驗證用戶！
+2024-12-13 16:17:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 16:17:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 16:17:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 16:17:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-13 16:17:25 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 23324 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-13 16:17:25 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 16:17:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 16:17:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2024-12-13 16:17:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-13 16:17:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-13 16:17:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 16:17:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-13 16:17:27 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-13 16:17:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 16:17:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1463 ms
+2024-12-13 16:17:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 16:17:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-13 16:17:27 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-13 16:17:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 16:17:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 16:17:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c18ee69
+2024-12-13 16:17:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 16:17:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13 16:17:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 16:17:29 [main] INFO  c.wealth.demo.config.CategoryConfig - 分類已存在，無需初始化
+2024-12-13 16:17:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 16:17:29 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-13 16:17:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-13 16:17:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-13 16:17:30 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 4.678 seconds (process running for 5.024)
+2024-12-13 16:17:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13 16:17:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-13 16:17:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-13 16:17:40 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 16:17:40 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzc4NjAsImV4cCI6MTczNDE2NDI2MH0.bFLHcn_7mIVdrhw4KKes8uicmbTLxdXYh0lPaLkMovQ
+2024-12-13 16:17:40 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 16:17:41 [http-nio-8080-exec-4] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 16:17:41 [http-nio-8080-exec-8] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=12345, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T08:17:45.747, note=null)
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=12345, type=INCOME, categoryId=1, categoryName=null, timestamp=2024-12-13T08:17:45.747, note=null)
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: WealthDTO(id=2, amount=12345, type=INCOME, categoryId=1, categoryName=薪資, timestamp=2024-12-13T08:17:45.747, note=null)
+2024-12-13 16:17:45 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄: WealthDTO(id=2, amount=12345, type=INCOME, categoryId=1, categoryName=薪資, timestamp=2024-12-13T08:17:45.747, note=null)
+2024-12-13 16:17:46 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-13 16:17:46 [http-nio-8080-exec-10] ERROR c.w.demo.controller.WealthController - 未找到驗證用戶！
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到新增收支記錄請求: WealthDTO(id=null, amount=123123, type=EXPENSE, categoryId=5, categoryName=null, timestamp=2024-12-13T08:20:47.642, note=null)
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=123123, type=EXPENSE, categoryId=5, categoryName=null, timestamp=2024-12-13T08:20:47.642, note=null)
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: WealthDTO(id=3, amount=123123, type=EXPENSE, categoryId=5, categoryName=交通, timestamp=2024-12-13T08:20:47.642, note=null)
+2024-12-13 16:20:47 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄: WealthDTO(id=3, amount=123123, type=EXPENSE, categoryId=5, categoryName=交通, timestamp=2024-12-13T08:20:47.642, note=null)
+2024-12-13 16:20:49 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-13 16:20:49 [http-nio-8080-exec-3] ERROR c.w.demo.controller.WealthController - 未找到驗證用戶！
+2024-12-13 16:31:38 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 開始驗證用戶登錄: 123
+2024-12-13 16:31:38 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶 123 登錄成功，JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJpYXQiOjE3MzQwNzg2OTgsImV4cCI6MTczNDE2NTA5OH0.WVHx6nrw9cU4cFrs4XqksQQF6YdOiOV06ac4AT3nDPA
+2024-12-13 16:31:38 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶名: 123
+2024-12-13 16:31:38 [http-nio-8080-exec-1] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 支出
+2024-12-13 16:31:38 [http-nio-8080-exec-10] INFO  c.w.demo.service.CategoryService - 根據類型獲取分類: 收入

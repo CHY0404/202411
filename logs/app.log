@@ -570,3 +570,73 @@
 2024-12-19 10:51:34 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 查詢結果: []
 2024-12-19 10:51:36 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
 2024-12-19 10:51:36 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 111
+2024-12-19 10:52:11 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 10:52:11 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 10:52:11 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 111
+2024-12-19 10:52:11 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 10:52:11 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 10:57:48 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 10:57:48 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 10:57:53 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 10:57:53 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 10:57:55 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 10:57:55 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 10:57:59 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 10:57:59 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:16:54 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-19 11:16:54 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-19 11:16:54 [http-nio-8080-exec-2] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-19 11:16:54 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:16:54 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:16:54 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:16:54 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:16:54 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:17:23 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:17:23 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:17:24 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:17:24 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:17:24 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:17:24 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:17:24 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:17:35 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:17:35 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:17:36 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:17:36 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:17:36 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:17:36 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:17:36 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:18:16 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:18:16 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:18:17 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:18:17 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:18:17 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:18:17 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:18:17 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:18:37 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:18:37 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:18:42 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:18:42 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:18:42 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:18:42 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:18:42 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:30:28 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:30:28 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:30:30 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:30:30 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:30:30 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:30:30 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:30:30 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:30:53 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:30:53 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:30:55 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:30:55 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:30:55 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:30:55 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:30:55 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 查詢結果: []
+2024-12-19 11:30:56 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:30:56 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:30:59 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Page=0, Size=10
+2024-12-19 11:30:59 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-19 11:30:59 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-19 11:30:59 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 查詢分頁收支記錄請求: Page=0, Size=10
+2024-12-19 11:30:59 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 查詢結果: []

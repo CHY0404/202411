@@ -1,37 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<aside class="collapse d-md-block bg-light border-end vh-100" id="menu" style="width: 250px;">
-    <div class="p-3">
-        <!-- App Logo -->
-        <div class="d-flex align-items-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6a.5.5 0 1 0 .708.708L8 1.707l5.646 5.647a.5.5 0 0 0 .708-.708l-6-6z"/>
-                <path d="M7.5 10.5v5h1v-5h-1z"/>
-                <path d="M2.5 14.5v-7H4v7H2.5zM10 7.5v7h1v-7h1.5a.5.5 0 0 0 0-1h-3a.5.5 0 0 0 0 1H10z"/>
-            </svg>
-            <span class="ms-2 fw-bold">MyApp</span>
-        </div>
-        <!-- 菜單 -->
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="${pageContext.request.contextPath}/dashboard">
-                    <i class="bi bi-house-door-fill me-2"></i>
-                    首頁
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="${pageContext.request.contextPath}/income-expense">
-                    <i class="bi bi-bar-chart-fill me-2"></i>
-                    收支紀錄
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="${pageContext.request.contextPath}/settings">
-                    <i class="bi bi-gear-fill me-2"></i>
-                    設定
-                </a>
-            </li>
-        </ul>
-    </div>
-</aside>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<aside id="sidebar" class="sidebar bg-light border-end vh-100">
+    <!-- LOGO -->
+    <div class="sidebar-logo text-center py-3">
+        <a href="${pageContext.request.contextPath}/dashboard">
+            <img src="${pageContext.request.contextPath}/images/logo.png" alt="Logo" class="logo">
+        </a>
+    </div>
+
+    <!-- 菜單項目 -->
+    <ul class="nav flex-column p-3">
+        <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath}/income-expense">
+                <i class="bi bi-cash-stack me-2"></i> 收支紀錄
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath}/statistics">
+                <i class="bi bi-bar-chart-fill me-2"></i> 數據圖表
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath}/profile">
+                <i class="bi bi-person-circle me-2"></i> 會員資料
+            </a>
+        </li>
+    </ul>
+</aside>

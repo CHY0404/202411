@@ -1,0 +1,129 @@
+/* 頁面背景與基本樣式 */
+.income-expense-page {
+    background-color: #f4f8fb; /* 背景顏色 */
+    padding: 20px; /* 內邊距 */
+    font-family: Arial, sans-serif; /* 字體 */
+}
+
+/* 卡片樣式 */
+.income-expense-page .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    border-radius: 8px; /* 圓角 */
+    margin-bottom: 1.5rem; /* 下邊距 */
+}
+
+/* 收支類型按鈕樣式 */
+.income-expense-page .btn-outline-primary.active-btn {
+    background-color: #007bff; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    border-color: #007bff; /* 邊框顏色 */
+}
+
+.income-expense-page .btn-outline-danger.active-btn {
+    background-color: #dc3545; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    border-color: #dc3545; /* 邊框顏色 */
+}
+
+/* 表格樣式 */
+.income-expense-page .table {
+    background-color: white; /* 背景顏色 */
+    border-radius: 8px; /* 圓角 */
+    overflow: hidden; /* 隱藏溢出部分 */
+    font-size: 14px; /* 字體大小 */
+}
+
+.income-expense-page .table th {
+    background-color: #007bff; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    text-align: center; /* 文字居中 */
+    font-size: 15px; /* 字體大小 */
+    padding: 10px; /* 內邊距 */
+}
+
+.income-expense-page .table td {
+    text-align: center; /* 文字居中 */
+    vertical-align: middle; /* 垂直居中 */
+    padding: 8px; /* 內邊距 */
+}
+
+/* 收入和支出的背景色 */
+.income {
+    color: #6A5ACD !important;
+    font-weight: bold; /* 加粗顯示 */
+}
+
+.expense {
+    color: #DC143C !important;
+    font-weight: bold; /* 加粗顯示 */
+}
+
+/* 表單輸入框與提交按鈕 */
+.income-expense-page input.form-control,
+.income-expense-page select.form-select,
+.income-expense-page textarea.form-control {
+    font-size: 16px; /* 字體大小 */
+    padding: 8px; /* 內邊距 */
+    border-radius: 5px; /* 圓角 */
+}
+
+.income-expense-page button.btn-primary {
+    width: 100%; /* 寬度 */
+    font-size: 16px; /* 字體大小 */
+    padding: 10px; /* 內邊距 */
+    margin-top: 15px; /* 上邊距 */
+}
+
+/* 卡片標題樣式 */
+.income-expense-page .card-header {
+    background-color: #6c757d; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    font-weight: bold; /* 加粗 */
+    text-align: center; /* 文字居中 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .income-expense-page .table th,
+    .income-expense-page .table td {
+        font-size: 12px; /* 字體大小 */
+        padding: 5px; /* 內邊距 */
+    }
+
+    .income-expense-page button.btn-warning,
+    .income-expense-page button.btn-danger {
+        font-size: 12px; /* 字體大小 */
+        padding: 4px 8px; /* 內邊距 */
+    }
+}
+
+@media (max-width: 576px) {
+    .income-expense-page {
+        padding: 10px; /* 內邊距 */
+    }
+
+    .income-expense-page .card-body {
+        padding: 10px; /* 內邊距 */
+    }
+
+    .income-expense-page button.btn-primary {
+        font-size: 14px; /* 字體大小 */
+    }
+}
+
+/* 表單內元素間距 */
+#recordForm .col-auto {
+    margin-right: 10px; /* 每個欄位的間距 */
+}
+
+/* 按鈕樣式 */
+#recordForm button.btn-success {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* 增加表單和表格之間的距離 */
+#recordForm {
+    margin-bottom: 40px; /* 增加底部外邊距 */
+}

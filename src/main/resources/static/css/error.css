@@ -1,0 +1,14 @@
+/* =========== 背景樣式 =========== */
+
+/*
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/error.css">
+*/
+
+
+body.error-page {
+    background-image: url('../images/error/error2.png');
+    background-size: 45% auto;
+    background-position: 50% 80px;
+    background-repeat: no-repeat;
+    background-color: #f1e6da;
+}

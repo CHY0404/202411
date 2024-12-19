@@ -1,20 +1,19 @@
 package com.wealth.demo.service;
 
 import com.wealth.demo.exception.EmailAlreadyExistsException;
+import com.wealth.demo.exception.PasswordMismatchException;
 import com.wealth.demo.exception.UserAlreadyExistsException;
 import com.wealth.demo.exception.UsernameNotFoundException;
-import com.wealth.demo.exception.PasswordMismatchException;
 import com.wealth.demo.model.dto.UserLoginDTO;
 import com.wealth.demo.model.dto.UserRegisterDTO;
 import com.wealth.demo.model.entity.User;
 import com.wealth.demo.repository.UserRepository;
-import com.wealth.demo.util.JwtUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import jakarta.servlet.http.HttpSession;
+
 import java.util.Optional;
 
 @Service
@@ -22,19 +21,40 @@ public class UserService {
 
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
     private final UserRepository userRepository;
-    private final JwtUtil jwtUtil;
     private final BCryptPasswordEncoder passwordEncoder;
 
-    public UserService(UserRepository userRepository, JwtUtil jwtUtil, BCryptPasswordEncoder passwordEncoder) {
+    // 建構子
+    public UserService(UserRepository userRepository, BCryptPasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
-        this.jwtUtil = jwtUtil;
         this.passwordEncoder = passwordEncoder;
     }
 
     /**
-     * 註冊新用戶
+     * 驗證用戶的登錄資料 (用於登入邏輯)
      *
-     * @param userRegisterDTO 用戶註冊信息
+     * @param username 用戶名
+     * @param password 密碼
+     * @return 驗證通過的用戶
+     */
+    public User validateUser(String username, String password) {
+        logger.info("驗證用戶名和密碼: {}", username);
+
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("用戶名不存在！"));
+
+        if (!passwordEncoder.matches(password, user.getPassword())) {
+            logger.warn("密碼錯誤，用戶: {}", username);
+            throw new PasswordMismatchException("密碼錯誤！");
+        }
+
+        logger.info("用戶 {} 驗證成功！", username);
+        return user;
+    }
+
+    /**
+     * 用戶註冊
+     *
+     * @param userRegisterDTO 用戶註冊資料
      */
     @Transactional
     public void register(UserRegisterDTO userRegisterDTO) {
@@ -52,45 +72,16 @@ public class UserService {
             throw new EmailAlreadyExistsException("電子郵件已存在！");
         }
 
-        // 創建新用戶
+        // 新增用戶
         User newUser = new User();
         newUser.setUsername(userRegisterDTO.getUsername());
         newUser.setEmail(userRegisterDTO.getEmail());
-        newUser.setPassword(passwordEncoder.encode(userRegisterDTO.getPassword())); // 密碼加密
+        newUser.setPassword(passwordEncoder.encode(userRegisterDTO.getPassword()));
 
         userRepository.save(newUser);
         logger.info("用戶 {} 註冊成功！", userRegisterDTO.getUsername());
     }
 
-    /**
-     * 用戶登入
-     *
-     * @param userLoginDTO 用戶登入信息
-     * @return JWT Token
-     */
-    @Transactional
-    public String login(UserLoginDTO userLoginDTO) {
-        logger.info("開始驗證用戶登錄: {}", userLoginDTO.getUsername());
-
-        // 查詢用戶
-        User user = userRepository.findByUsername(userLoginDTO.getUsername())
-                .orElseThrow(() -> {
-                    logger.warn("用戶名不存在: {}", userLoginDTO.getUsername());
-                    return new UsernameNotFoundException("用戶名不存在！");
-                });
-
-        // 驗證密碼
-        if (!passwordEncoder.matches(userLoginDTO.getPassword(), user.getPassword())) {
-            logger.warn("密碼錯誤，用戶: {}", userLoginDTO.getUsername());
-            throw new PasswordMismatchException("密碼錯誤！");
-        }
-
-
-        // 生成 JWT Token
-        String token = jwtUtil.generateToken(user.getUsername());
-        logger.info("用戶 {} 登錄成功，JWT Token: {}", user.getUsername(), token);
-        return token;
-    }
     /**
      * 根據用戶名查詢用戶
      *
@@ -101,17 +92,14 @@ public class UserService {
         logger.info("查詢用戶名: {}", username);
 
         return userRepository.findByUsername(username)
-                .orElseThrow(() -> {
-                    logger.warn("用戶名不存在: {}", username);
-                    return new UsernameNotFoundException("用戶名不存在！");
-                });
+                .orElseThrow(() -> new UsernameNotFoundException("用戶名不存在！"));
     }
 
     /**
-     * 根據 ID 查詢用戶
+     * 根據用戶 ID 查詢用戶
      *
      * @param id 用戶 ID
-     * @return 用戶實體
+     * @return 用戶實體 (選填)
      */
     public Optional<User> getUserById(Long id) {
         logger.info("查詢用戶 ID: {}", id);
@@ -123,22 +111,20 @@ public class UserService {
     }
 
     /**
-     * 更新用戶信息
+     * 更新用戶資料
      *
      * @param id          用戶 ID
-     * @param updatedUser 更新後的用戶信息
-     * @return 更新後的用戶實體
+     * @param updatedUser 更新後的用戶資料
+     * @return 更新後的用戶
      */
     @Transactional
     public User updateUser(Long id, User updatedUser) {
         logger.info("更新用戶 ID: {}", id);
 
-        User existingUser = userRepository.findById(id).orElseThrow(() -> {
-            logger.warn("用戶 ID 不存在: {}", id);
-            return new IllegalArgumentException("用戶不存在！");
-        });
+        User existingUser = userRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("用戶不存在！"));
 
-        // 更新用戶屬性
+        // 更新屬性
         if (updatedUser.getUsername() != null) {
             existingUser.setUsername(updatedUser.getUsername());
         }
@@ -169,7 +155,40 @@ public class UserService {
         }
 
         userRepository.deleteById(id);
-        logger.info("用戶 ID: {} 已刪除。", id);
+        logger.info("用戶 ID: {} 已刪除！", id);
     }
+    @Transactional
+    public void updateProfile(Long userId, String username, String email, String currentPassword, String newPassword) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("用戶不存在"));
+
+        // 驗證當前密碼是否正確
+        if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
+            throw new IllegalArgumentException("當前密碼不正確");
+        }
+
+        // 更新用戶名和電子郵件
+        if (username != null && !username.equals(user.getUsername())) {
+            if (userRepository.existsByUsername(username)) {
+                throw new IllegalArgumentException("用戶名已存在");
+            }
+            user.setUsername(username);
+        }
+
+        if (email != null && !email.equals(user.getEmail())) {
+            if (userRepository.existsByEmail(email)) {
+                throw new IllegalArgumentException("電子郵件已存在");
+            }
+            user.setEmail(email);
+        }
+
+        // 更新密碼
+        if (newPassword != null && !newPassword.isEmpty()) {
+            user.setPassword(passwordEncoder.encode(newPassword));
+        }
+
+        userRepository.save(user);
+    }
+
 
 }

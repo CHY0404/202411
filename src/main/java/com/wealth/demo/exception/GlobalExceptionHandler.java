@@ -9,6 +9,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public String handleException(Exception e, Model model) {
+        e.printStackTrace();
         model.addAttribute("errorMessage", "系統發生錯誤：" + e.getMessage());
         return "error"; // 返回到自定義的 error.jsp
     }

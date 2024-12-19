@@ -1,0 +1,120 @@
+/* 首頁專用的 body 樣式 */
+.home-page {
+    background-image: url('../images/login.png'); /* 設定背景圖片的路徑 */
+    background-size: 40% auto; /* 設定背景圖片尺寸 */
+    background-position:80% 20%; /* 設定背景圖片位置 */
+    background-repeat: no-repeat; /* 設定背景圖片不重複 */
+    margin: 0; /* 設定外邊距為0 */
+    height: 100vh; /* 設定高度為視口高度 */
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 將內容水平居中 */
+    align-items: center; /* 將內容垂直居中 */
+    font-family: Arial, sans-serif; /* 設定字體為Arial，若無則使用sans-serif */
+}
+
+/* 表單容器樣式 */
+.form-container {
+    background-color: #fff; /* 背景顏色 */
+    padding: 20px; /* 內邊距 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    width: 100%; /* 寬度 */
+    max-width: 400px; /* 最大寬度 */
+    text-align: center; /* 文字居中 */
+}
+
+
+/* 首頁標題樣式 */
+.home-title {
+    font-size: 30px; /* 字體大小 */
+    color: #333; /* 字體顏色 */
+    margin-bottom: 20px; /* 下邊距 */
+    text-align: center; /* 文字居中 */
+}
+
+/* 表單標題 */
+h2 {
+    font-size: 24px; /* 字體大小 */
+    margin-bottom: 20px; /* 下邊距 */
+}
+
+/* 輸入框樣式 */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    padding: 10px; /* 內邊距 */
+    font-size: 14px; /* 字體大小 */
+    border: 1px solid #ccc; /* 邊框 */
+    border-radius: 5px; /* 圓角 */
+    width: 100%; /* 寬度 */
+    margin-bottom: 20px; /* 下邊距 */
+    box-sizing: border-box; /* 盒模型 */
+}
+
+input:focus {
+    outline: none; /* 移除焦點時的外框 */
+    border-color: #007bff; /* 焦點時的邊框顏色 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 焦點時的陰影效果 */
+}
+
+/* 提交按鈕樣式 */
+button {
+    padding: 10px; /* 內邊距 */
+    font-size: 16px; /* 字體大小 */
+    background-color: #007bff; /* 背景顏色 */
+    color: #fff; /* 文字顏色 */
+    border: none; /* 無邊框 */
+    border-radius: 5px; /* 圓角 */
+    width: 100%; /* 寬度 */
+    cursor: pointer; /* 滑鼠指標為手形 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 滑鼠懸停時的背景顏色 */
+}
+
+/* 切換表單樣式 */
+.form-toggle {
+    font-size: 14px; /* 字體大小 */
+    color: #007bff; /* 文字顏色 */
+    cursor: pointer; /* 滑鼠指標為手形 */
+    margin-top: 10px; /* 上邊距 */
+    text-decoration: underline; /* 下劃線 */
+}
+
+.form-toggle:hover {
+    color: #0056b3; /* 滑鼠懸停時的文字顏色 */
+}
+
+/* 首頁logo */
+.logo-image {
+    width: 150px;
+    height: auto;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* 添加間隔 */
+}
+
+#captcha {
+    flex-grow: 1;
+    max-width: 70%; /* 限制輸入框寬度 */
+}
+
+.captcha-container img {
+    margin: 0; /* 移除多餘的邊距 */
+}
+
+/* 錯誤訊息樣式 */
+.text-danger {
+    color: red; /* 確保錯誤訊息是紅色 */
+    display: block; /* 確保錯誤訊息是塊級元素 */
+    margin-top: 0px; /* 在錯誤訊息上方添加一些間距 */
+}
+
+.card {
+    margin: auto 0 80px 150px;
+}

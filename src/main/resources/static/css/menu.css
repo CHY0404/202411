@@ -1,0 +1,65 @@
+/* 預設側邊欄寬度 */
+.sidebar {
+    width: 200px;
+    transition: transform 0.3s ease-in-out; /* 添加動畫過渡效果 */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #91a9eb; /* 側邊欄背景色 */
+    overflow-y: auto; /* 垂直滾動支持 */
+    z-index: 1030; /* 高於主內容 */
+}
+
+/* 收合狀態的側邊欄 */
+.sidebar.collapsed {
+    transform: translateX(-250px); /* 收合時向左移出 */
+}
+
+/* 主內容區域 */
+.main-content {
+    margin-left: 200px; /* 預設側邊欄寬度 */
+    transition: margin-left 0.3s ease-in-out; /* 添加動畫過渡效果 */
+}
+
+/* 收合狀態下的主內容區域 */
+.main-content.collapsed {
+    margin-left: 0; /* 全寬顯示 */
+}
+
+/* Header 動態樣式 */
+#header {
+    margin-left: 200px; /* 預設側邊欄寬度 */
+    transition: margin-left 0.3s ease-in-out; /* 添加動畫過渡效果 */
+}
+
+/* 收合狀態下的 Header */
+#header.collapsed {
+    margin-left: 0; /* Header 回到左側 */
+}
+
+/* LOGO 圖片樣式 */
+.logo {
+    height: 50px; /* 控制 LOGO 高度 */
+    width: auto; /* 等比縮放 LOGO */
+    max-width: 80%; /* 限制最大寬度，避免 LOGO 過大 */
+}
+
+/* LOGO 容器樣式 */
+.sidebar-logo {
+    text-align: center; /* LOGO 水平居中 */
+    padding: 20px 0; /* 上下內邊距 */
+   /*border-bottom: 1px solid #ddd;  底部分隔線 */
+}
+
+/* 小屏幕的 LOGO 樣式 */
+@media (max-width: 768px) {
+    .logo {
+        height: 40px; /* 小屏幕下縮小 LOGO */
+    }
+
+    .sidebar-logo {
+        padding: 15px 0; /* 減少內邊距 */
+    }
+}
+

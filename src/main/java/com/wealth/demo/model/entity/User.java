@@ -1,12 +1,12 @@
 package com.wealth.demo.model.entity;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +16,10 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
-
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false, unique = true, length = 50)
@@ -36,8 +35,7 @@ public class User {
     private String email; // 電子郵件
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @ToString.Exclude
     private List<Wealth> wealthRecords = new ArrayList<>(); // 收支記錄
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Category> categories = new ArrayList<>(); // 用戶自訂分類
 }

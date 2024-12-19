@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-
 public class WealthMapper {
 
     @Autowired
@@ -22,6 +21,4 @@ public class WealthMapper {
     public Wealth toEntity(WealthDTO wealthDTO) {
         return modelMapper.map(wealthDTO, Wealth.class);
     }
-
-
 }
